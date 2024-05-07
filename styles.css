@@ -115,7 +115,7 @@
 	height:42px;
 	position:absolute;
 	left:97px;
-	top:250px;
+	top:200px;
 	font-family:Poppins;
 	text-align:left;
 	font-size:28px;
@@ -127,7 +127,7 @@
 	height:42px;
 	position:absolute;
 	left:97px;
-	top: 580px;
+	top: 530px;
 	font-family:Poppins;
 	text-align:left;
 	font-size:28px;
@@ -231,7 +231,7 @@
 	height:232px;
 	position:absolute;
 	left:97px;
-	top:300px;
+	top:240px;
 	font-family:Poppins;
 	text-align:left;
 	font-size:100px;
@@ -340,7 +340,7 @@
 	height:68px;
 	position:absolute;
 	left:97px;
-	top:650px;
+	top:580px;
 }
 .resume2 { 
 	background-color:rgba(245.35639107227325, 238.12364637851715, 132.04361379146576, 1);

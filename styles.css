@@ -1,4 +1,99 @@
 
+    
+    * {
+		margin: 0;
+		padding: 0;
+	  }
+  
+	  body {
+  
+		background-color: rgba(251.00000023841858, 248.0000004172325, 204.00000303983688, 1);
+		padding: 20px;
+	  }  
+	  .active {
+		color: rgba(3, 4, 94, 1);
+		text-align: left;
+		font-size: 18px;
+		letter-spacing: 0;
+		font-family: Poppins;
+		margin-right: 250px;
+		margin-left: 0px;  
+	  }
+  
+	  ul {
+		/* Actual rgba color */
+		z-index: 1;
+		/* text-align: center; */
+		color: rgba(3, 4, 94, 1);
+		/* text-align: left; */
+		font-size: 18px;
+		letter-spacing: 0;
+		list-style-type: none;
+  
+		/* padding: 0; */
+		overflow: hidden;
+		/* position: fixed; */
+		/* top: 0; */
+		/* width: 150%; */
+		font-family: Poppins;
+		background-color:rgba(251.00000023841858, 248.0000004172325, 204.00000303983688, 1);
+  
+	  }
+  
+	  li {
+		float: left;
+  
+		/* Center align the text within li */
+	  }
+  
+	  li a {
+		display: block;
+		color: rgba(3, 4, 94, 1);
+		/* Actual rgba color       */
+		padding: 14px 16px;
+		text-decoration: none;
+	  }
+  
+	  header {
+		display: flex;
+		justify-content: space-between;
+  
+  
+  
+	  }
+  
+	  header ul {
+		display: flex;
+		position: fixed;
+		top: 0;
+		padding: 20px;
+		width: 100%;
+  
+  
+  
+	  }
+  
+	  .linkedin {
+  
+		width: 24px;
+		/* Adjust the width as needed */
+		height: 24px;
+		margin-left: 200px;
+	  }
+  
+	  .github {
+  
+		width: 30px;
+		/* Adjust the width as needed */
+		height: 30px;
+	  }
+  
+	  .email {
+		width: 30px;
+		/* Adjust the width as needed */
+		height: 30px;
+	  }
+	
 
 
 

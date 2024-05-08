@@ -8,56 +8,13 @@
 
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/styles.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/style2.css">
 
   
 </head>
 <style>
- .tooltip {
-    visibility: hidden;
-    position: absolute;
-    bottom: 0px; /* Position the tooltip below the icon */
-    right: 100px; /* Center the tooltip horizontally */
-    transform: translateX(-50%);
-    color: rgba(3, 4, 94, 1);
-    text-align: center;
-    padding: 5px;
-    border-radius: 6px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    border-bottom: 1px dotted black;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.tooltip:before {
-    content: '';
-    position: absolute;
-    top: 100%; /* Position the arrow at the top */
-    right: 100px;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent; /* Make the arrow black */
-}
-
-.icon:hover + .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
-.icon {
-    position: relative;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-}
-
-.icon img {
-    width: 100%;
-    height: auto;
-}
+ 
 
   </style>
 <header>
@@ -86,7 +43,7 @@
   <div class="resume1">
     <div class="resume2"></div>
     <div class="resume3"></div>
-    <button><span class="resume4">Resume</span></button>
+    <button><a href="document/Resume.pdf" download><span class="resume4">Resume</span></a></button>
   </div>
   <div class="profile"><img src="images/image1.png" alt="aiswarya" style="width:550px;
     height:450px;"></div>
@@ -97,16 +54,13 @@
 
   <section id="aboutme">    
     <span class="aboutme">About Me</span>
-    <span class="heading5">To build my career in a reputable
+    <span class="aboutme-content">To build my career in a reputable
       organization to fully utilize my skills, while making a
       significant contribution to the success of the company.</span>
   </section>
 
   <section id="education">
     <span class="education">Eductaion</span>
-   
-
-
 <div class="timeline">
   <div class="container left">
     <div class="content">
@@ -133,11 +87,158 @@
 </div>
   </section>
 
+
   <section id="projects">
+    <span class="projects">Projects</span>
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+        <div class="ag-courses_item">
+          <a href="https://github.com/aiswaryajayadev/Attendance-system.git" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              Attendance System<br>
+              <div class="ag-courses-item_date-box">          
+                <span class="ag-courses-item_date">A simple PhP program that allows 
+                  us to take attendance in a class.</span></div>
+            </div>
+    
+          </a>
+        </div>
+        
+    <div class="ag-courses_item">
+      <a href="https://github.com/aiswaryajayadev/Web-Page-Design.git" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Web Page <br>Design
+        
+        <br><div class="ag-courses-item_date-box">          
+          <span class="ag-courses-item_date">
+            A simple web page design for contact us and price tags.
+          </span>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="https://github.com/aiswaryajayadev/Student-Administrative-System.git" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Student Administrative System
+        
+
+        <div class="ag-courses-item_date-box">
+           <span class="ag-courses-item_date">
+            A system that helps to keep track on student data.
+          </span>
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="ag-courses_item">
+      <a href="https://github.com/aiswaryajayadev/College-Amenity-Booking-System.git" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          College Amenity Booking System 
+
+        <div class="ag-courses-item_date-box">          
+          <span class="ag-courses-item_date">
+            A booking system that helps a college organization to manage their amenity bookings.
+          </span>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="https://github.com/aiswaryajayadev/Student-Performance-Analyzer.git" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Student Performance Analyzer
+        <div class="ag-courses-item_date-box">
+              <span class="ag-courses-item_date">
+            A system that helps to keep track on student academics.
+          </span>
+        </div>
+      </div>
+      </a>
+    </div>
+
+
+
+      </div>
+    </div>
     
   </section>
 
   <section id="internships">
+    <span class="internships">Internships</span>
+    <section class="articles">
+      <article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="images/web.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Web Developer Intern</h2>
+            <p>
+              Completed one month Internship as Web Developement Intern At JMD Groups
+            </p><br>
+            <a href="web.html" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              
+            </a>
+          </div>
+        </div>
+      </article>
+      <article>
+    
+        <div class="article-wrapper">
+          <figure>
+            <img src="images/cloud.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>IBM Student Internship</h2>
+            <p>
+            Completed an eight-week internship on Cloud Computing under IBM SkillsBuild Program.
+            </p><br>
+            <a href="internship.html" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article>
+    
+        <div class="article-wrapper">
+          <figure>
+            <img src="images/python.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Python Developer Intern</h2>
+            <p>
+              Completed a four month Internship as python developer at The Entrepreneurship Network.
+            </p><br>
+            <a href="python.html" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
     
   </section>
 </body>

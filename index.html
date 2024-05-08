@@ -7,10 +7,59 @@
   <title>Portfolio-Aiswarya Jayadev</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style/styles.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="style/style.css">
 
   
 </head>
+<style>
+ .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0px; /* Position the tooltip below the icon */
+    right: 100px; /* Center the tooltip horizontally */
+    transform: translateX(-50%);
+    color: rgba(3, 4, 94, 1);
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-bottom: 1px dotted black;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip:before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position the arrow at the top */
+    right: 100px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent; /* Make the arrow black */
+}
+
+.icon:hover + .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+  </style>
 <header>
 
   <ul>
@@ -18,9 +67,9 @@
     <li><a href="#home">HOME</a></li>
     <li><a href="#projects">PROJECTS</a></li>
     <li><a href="#aboutme">ABOUT</a></li>
-    <li><a href="#linkedin"><img class="linkedin" src="assestes/likedin.svg" alt="LikedIn"></a></li>
-    <li><a href="#linkedin"><img class="github" src="assestes/github.svg" alt="Github"></a></li>
-    <li><a href="#linkedin"><img class="email" src="assestes/email.svg" alt="Email"></a></li>
+    <li><a href="#linkedin"><img class="icon linkedin" src="images/linkedin.svg" alt="LinkedIn"><span class="tooltip">LinkedIn</span></a></li>
+    <li><a href="#github"><img class="icon" src="images/github.svg" alt="Github"><span class="tooltip">Github</span></a></li>
+    <li><a href="#email"><img class="icon" src="images/email.svg" alt="Email"><span class="tooltip">Email</span></a></li>
 
 
   </ul>
@@ -39,7 +88,8 @@
     <div class="resume3"></div>
     <button><span class="resume4">Resume</span></button>
   </div>
-  <div class="profile"></div>
+  <div class="profile"><img src="images/image1.png" alt="aiswarya" style="width:550px;
+    height:450px;"></div>
 </section>
 
 
@@ -53,7 +103,34 @@
   </section>
 
   <section id="education">
-    
+    <span class="education">Eductaion</span>
+   
+
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2023</h2>
+      <p>Completed My Postgraduation Degree in 
+        Integrated MCA from Scms School of Technology and management, Ernakulam.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2018</h2>
+      <p>Completed 12<sup>th</sup> grade in Computer Science from Nirmala Higher Secondary Shcool,
+      Aluva,Ernakulam. </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Completed 10<sup>th</sup> grade from Sivagiri Vidyaniketan Higher Secondary Shcool
+        Aluva,Ernakulam.</p>
+    </div>
+  </div>
+ 
+</div>
   </section>
 
   <section id="projects">

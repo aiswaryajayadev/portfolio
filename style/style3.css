@@ -196,3 +196,25 @@
   background-image: url(https://i.ibb.co/J3TjC4W/second-plan.png);
   animation-duration: 600s;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__columns {
+    flex-direction: row; /* Change back to row layout */
+    gap: 1rem; /* Decrease gap between columns */
+  }
+
+  .footer__col-title {
+    font-size: 1.4rem; /* Decrease font size for smaller screens */
+  }
+
+  .footer_input_container input[type="text"] {
+    margin-top: 5px; /* Adjust margin for smaller screens */
+    margin-bottom: 5px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__col-title {
+    font-size: 1.2rem; /* Further decrease font size for smaller screens */
+  }
+}

@@ -94,6 +94,19 @@
   background-color: #faa8d9;
 }
 
+@media screen and (max-width: 768px) {
+  .ag-courses_item {
+    flex-basis: calc(50% - 30px);
+  }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .ag-courses_item {
+    flex-basis: calc(100% - 30px);
+  }
+}
+
 
 
 

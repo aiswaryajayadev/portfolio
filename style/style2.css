@@ -143,3 +143,20 @@ Generic layout (demo looks)
   white-space: nowrap; 
   width: 1px;
 }
+
+@media screen and (max-width: 768px) {
+  .articles {
+    display: block; /* Change to block layout for small screens */
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  article h2 {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  article .article-body {
+    padding: 16px; /* Decrease padding for smaller screens */
+  }
+}

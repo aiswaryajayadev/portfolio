@@ -447,5 +447,57 @@ ul li a.active {
 		border-radius: 6px;
 		font-size: 18px;
 	  }
+
+	  @media screen and (max-width: 768px) {
+		.heading1,
+		.heading2,
+		.heading3 {
+		  font-size: 20px;
+		}
+	  
+		.profile {
+		  max-width: 200px;
+		}
+	  
+		#aboutme,
+		.projects,
+		.internships {
+		  max-width: 250px;
+		}
+	  
+		.resume1 {
+		  left: 10px;
+		}
+	  
+		.timeline .container {
+		  width: 80%;
+		}
+	  }
+	  
+	  @media screen and (max-width: 480px) {
+		.heading1,
+		.heading2,
+		.heading3 {
+		  font-size: 16px;
+		}
+	  
+		.profile {
+		  max-width: 150px;
+		}
+	  
+		#aboutme,
+		.projects,
+		.internships {
+		  max-width: 200px;
+		}
+	  
+		.resume1 {
+		  left: 5px;
+		}
+	  
+		.timeline .container {
+		  width: 90%;
+		}
+	  }
 	  
 	

@@ -13,7 +13,21 @@ article {
   
 }
 /* Additional text container */
-.article-body .additional-text {
+ .additional-text1 {
+  opacity: 0; /* Initially hidden */
+  max-height: 0; /* Initially collapsed */
+  overflow: hidden; /* Hide overflow content */
+  background-color: transparent;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transition */
+}
+.additional-text2 {
+  opacity: 0; /* Initially hidden */
+  max-height: 0; /* Initially collapsed */
+  overflow: hidden; /* Hide overflow content */
+  background-color: transparent;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transition */
+}
+.additional-text3 {
   opacity: 0; /* Initially hidden */
   max-height: 0; /* Initially collapsed */
   overflow: hidden; /* Hide overflow content */
@@ -22,30 +36,38 @@ article {
 }
 
 /* Show additional text on hover */
-.article-body:hover .additional-text {
+.article-wrapper1:hover .additional-text1{
+  opacity: 1; /* Show on hover */
+  max-height: 100px; /* Expand height */
+  
+}
+.article-wrapper2:hover .additional-text2{
+  opacity: 1; /* Show on hover */
+  max-height: 100px; /* Expand height */
+  
+}
+.article-wrapper3:hover .additional-text3{
   opacity: 1; /* Show on hover */
   max-height: 100px; /* Expand height */
   
 }
 
-/* Apply box shadow and scale image on hover */
-.article-wrapper:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
-}
 
-.article-wrapper:hover img {
+
+.article-wrapper1:hover img {
+  transform: scale(1.1); /* Zoom in image */
+  transition: transform 0.3s ease-out; /* Smooth transition */
+}
+.article-wrapper2:hover img {
+  transform: scale(1.1); /* Zoom in image */
+  transition: transform 0.3s ease-out; /* Smooth transition */
+}
+.article-wrapper3:hover img {
   transform: scale(1.1); /* Zoom in image */
   transition: transform 0.3s ease-out; /* Smooth transition */
 }
 
 
-article a::after {
-  /* position: absolute; */
-  inset-block: 0;
-  inset-inline: 0;
-  cursor: pointer;
-  content: "";
-}
 
 /* basic article elements styling */
 article h2 {
@@ -75,50 +97,6 @@ article img {
   padding: 24px;
   font-family: Poppins;
 }
-
-article a {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: #28666e;
-}
-
-article a:focus {
-  outline: 1px dotted #28666e;
-}
-
-article a .icon {
-  min-width: 24px;
-  width: 24px;
-  height: 24px;
-  margin-left: 5px;
-  transform: translateX(var(--link-icon-translate));
-  opacity: var(--link-icon-opacity);
-  transition: all 0.3s;
-}
-
-/* using the has() relational pseudo selector to update our custom properties */
-article:has(:hover, :focus) {
-  --img-scale: 1.1;
-  --title-color: #28666e;
-  --link-icon-translate: 0;
-  --link-icon-opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
-
-/************************ 
-Generic layout (demo looks)
-**************************/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
-
 .articles {
   position: relative;
   margin-top: -2000px; 
@@ -134,15 +112,7 @@ Generic layout (demo looks)
 
  
 
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
-}
+
 
 @media screen and (max-width: 768px) {
   .articles {

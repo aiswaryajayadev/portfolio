@@ -12,6 +12,32 @@ article {
   overflow: hidden;
   
 }
+/* Additional text container */
+.article-body .additional-text {
+  opacity: 0; /* Initially hidden */
+  max-height: 0; /* Initially collapsed */
+  overflow: hidden; /* Hide overflow content */
+  background-color: transparent;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out; /* Smooth transition */
+}
+
+/* Show additional text on hover */
+.article-body:hover .additional-text {
+  opacity: 1; /* Show on hover */
+  max-height: 100px; /* Expand height */
+  
+}
+
+/* Apply box shadow and scale image on hover */
+.article-wrapper:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.article-wrapper:hover img {
+  transform: scale(1.1); /* Zoom in image */
+  transition: transform 0.3s ease-out; /* Smooth transition */
+}
+
 
 article a::after {
   /* position: absolute; */
@@ -47,6 +73,7 @@ article img {
 
 .article-body {
   padding: 24px;
+  font-family: Poppins;
 }
 
 article a {

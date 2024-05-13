@@ -13,7 +13,7 @@
 		margin-bottom: 0px;
 		
 	  }  
-	  .active {
+	  .active1 {
 		color: rgba(3, 4, 94, 1);
 		text-align: left;
 		font-size: 18px;
@@ -23,7 +23,7 @@
 		margin-left: 0px;  
 	  }
   
-	  ul {
+	 header ul {
 		/* Actual rgba color */
 		z-index: 1;
 		/* text-align: center; */
@@ -42,14 +42,34 @@
 		background-color:rgba(251.00000023841858, 248.0000004172325, 204.00000303983688, 1);
   
 	  }
+
+	  /* Style for the active link */
+ul li a.active {
+	text-decoration: underline;
+  }
   
-	  li {
+  /* Style for the underline effect */
+  ul li a:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	background: rgba(3, 4, 94, 1); /* Change the color as needed */
+	transition: width 0.3s;
+  }
+  
+  ul li a.active:after {
+	width: 100%;
+  }
+  
+  
+	 header li {
 		float: left;
   
 		/* Center align the text within li */
 	  }
   
-	  li a {
+	 header li a {
 		display: block;
 		color: rgba(3, 4, 94, 1);
 		/* Actual rgba color       */
@@ -205,7 +225,7 @@
 
 
 
-.aboutme{
+#aboutme{
 	color:rgb(198, 189, 70);
 	width:525px;
 	height:116px;
@@ -219,19 +239,7 @@
 	line-height:px;
 
 }
-.education { 
-	color:rgb(198, 189, 70);
-	width:525px;
-	height:116px;
-	position:absolute;
-	left:57px;
-	top:1359px;
-	font-family:Poppins;
-	text-align:left;
-	font-size:100px;
-	letter-spacing:0;
-	line-height:px;
-}
+
 .projects { 
 	color:rgb(198, 189, 70);
 	width:292px;
@@ -261,17 +269,7 @@
 }
 
 
-footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 30px;
-	background-color:  rgba(251.00000023841858, 248.0000004172325, 204.00000303983688, 1);
-	color:rgba(3.000000058673322, 4.000000236555934, 94.0000019967556, 1);
-	position: relative;
-	top: 700px;
-	font-family: Poppins;  
-  }
+
   
 
 
@@ -334,8 +332,22 @@ footer {
 	background-size:cover;
 }
 
+#education { 
+	color:rgb(198, 189, 70);
+	width:525px;
+	height:116px;
+	position:absolute;
+	left:57px;
+	top:1359px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:100px;
+	letter-spacing:0;
+	line-height:px;
+}
+
     /* The actual timeline (the vertical ruler) */
-	.timeline {
+.timeline {
 		position: absolute;
 		max-width: 1200px;
 		margin: 0 0;
@@ -359,7 +371,7 @@ footer {
 	  .container {
 		
         transition: 0.3s;
-		padding: 30px 40px;
+		padding: 30px 30px;
 		position: relative;
 		background-color: inherit;
 		width: 40%;
@@ -393,7 +405,7 @@ footer {
 	  
 	  /* Place the container to the right */
 	  .right {
-		left: 655px;
+		left: 643px;
 	  }
 	  
 	  /* Add arrows to the left container (pointing right) */
@@ -429,11 +441,63 @@ footer {
 	  
 	  /* The actual content */
 	  .content {
-		padding: 9px 9px;
+		padding: 15px 15px;
 		background-color: rgb(229, 215, 167);
 		position: relative;
 		border-radius: 6px;
 		font-size: 18px;
+	  }
+
+	  @media screen and (max-width: 768px) {
+		.heading1,
+		.heading2,
+		.heading3 {
+		  font-size: 20px;
+		}
+	  
+		.profile {
+		  max-width: 200px;
+		}
+	  
+		#aboutme,
+		.projects,
+		.internships {
+		  max-width: 250px;
+		}
+	  
+		.resume1 {
+		  left: 10px;
+		}
+	  
+		.timeline .container {
+		  width: 80%;
+		}
+	  }
+	  
+	  @media screen and (max-width: 480px) {
+		.heading1,
+		.heading2,
+		.heading3 {
+		  font-size: 16px;
+		}
+	  
+		.profile {
+		  max-width: 150px;
+		}
+	  
+		#aboutme,
+		.projects,
+		.internships {
+		  max-width: 200px;
+		}
+	  
+		.resume1 {
+		  left: 5px;
+		}
+	  
+		.timeline .container {
+		  width: 90%;
+		}
 	  }
 	  
 	

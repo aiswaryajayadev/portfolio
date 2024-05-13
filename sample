@@ -1,0 +1,43 @@
+<footer>
+    <div class="address"><img src="images/home.svg" style="height: 24px; width:  24px;"><p>&nbsp;Nandanam<br>
+      Muppathadam PO<br>Aluva<br>Ernakulam,kerala<br>India-683110</p></div>
+      <div class="message" ><p>Enter a Mesaage </p><br><textarea> </textarea>
+        <button type="submit"><img src="images/send.svg" style="height: 26px; width: 24px;"></button>
+      </div>
+      <div class="phone"><img src="images/phone.svg" style="height: 24px; width:  24px;"><p> +91 9072735282</p></div>
+       
+      
+    </footer>
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+        background-color:  rgba(251.00000023841858, 248.0000004172325, 204.00000303983688, 1);
+        color:rgba(3.000000058673322, 4.000000236555934, 94.0000019967556, 1);
+        position: relative;
+        top: 700px;
+        font-family: Poppins;  
+      }
+
+
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">
+            <i data-feather="youtube"></i><span>Youtube</span>
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">
+            <i data-feather="facebook"></i><span>Facebook</span>
+            
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="" class="footer__nav-link">
+            <i data-feather="instagram"></i><span>Instagram</span>
+            
+          </a>
+        </li>
+      </ul>
